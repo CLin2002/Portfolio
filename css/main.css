@@ -254,8 +254,10 @@ footer {
     height: auto;
 }
 
-/* img {
-  object-fit: cover;
-  width: 50px;
-  height: 100px;
-} */
+
+.youtube-video {
+    flex: 1;
+    width: 40vw;
+  }
+
+

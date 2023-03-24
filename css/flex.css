@@ -20,6 +20,12 @@
     gap: 1.5rem;
 } */
 
+.youtube-video {
+    flex: 1;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
 .style-element:first-child {
     margin-left: 10vw;
     flex: 1;
