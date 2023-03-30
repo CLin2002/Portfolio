@@ -21,9 +21,13 @@
 } */
 
 .youtube-video {
-    flex: 1;
     aspect-ratio: 16 / 9;
     width: 100%;
+}
+
+.center iframe {
+    flex: 1;
+    aspect-ratio: 16/9;
 }
 
 .style-element:first-child {
@@ -68,6 +72,19 @@
   }
 
   @media only screen and (max-width: 600px) {
+
+    h2 {
+        font-size: 35px;
+    }
+    
+    h3 {
+        font-size: 25px;
+    }
+    
+    p {
+        font-size: 15px;
+    }
+
     .main-nav {
         padding: 40px;
         text-align: center;

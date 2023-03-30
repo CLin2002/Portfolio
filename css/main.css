@@ -16,6 +16,18 @@ h2, h3, h4, h5, h6, p, a, li, ul {
     font-family: 'comfortaa', sans-serif;
 }
 
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+p {
+    font-size: 20px;
+}
+
 a {
     color: black;
     text-decoration: none;
@@ -91,9 +103,14 @@ footer {
 }
 
 .center {
+    margin-top: 2rem;
     text-align: center;
     align-items: center;
-    width: 30vw;
+    width: 45vw;
+}
+
+.center a:hover {
+    opacity: 0.5;
 }
 
 .center img {
@@ -253,11 +270,5 @@ footer {
     max-width: 30vw;
     height: auto;
 }
-
-
-.youtube-video {
-    flex: 1;
-    width: 40vw;
-  }
 
 
