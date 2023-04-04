@@ -1,0 +1,65 @@
+#home .style-container, #contact .style-container {
+    animation-duration: 4s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    margin-top: 200px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+.banner-block .style-container {
+    animation-duration: 4s;
+    animation-name: slideleft;
+    animation-iteration-count: 1;
+}
+
+@keyframes slideleft {
+    0% {
+        opacity: 0;
+        margin-left: 55vw;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+.style-container {
+    animation-duration: 4s;
+    animation-name: slideright;
+    animation-iteration-count: 1;
+}
+
+@keyframes slideright {
+    0% {
+        opacity: 0;
+        margin-right: 55vw;
+    }
+    100% {
+        opacity: 1;
+        margin-right: 0;
+    }
+}
+
+.main-nav {
+    animation-duration: 4s;
+    animation-name: navanimation;
+    animation-iteration-count: 1;
+}
+
+@keyframes navanimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
