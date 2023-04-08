@@ -271,4 +271,7 @@ footer {
     height: auto;
 }
 
+.container, .project, .guide{ 
+    display: contents;
+}
 

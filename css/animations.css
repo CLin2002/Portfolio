@@ -15,9 +15,27 @@
   }
 }
 
-.banner-block .style-container {
+.project .style-container:nth-of-type(even) {
     animation-duration: 4s;
     animation-name: slideleft;
+    animation-iteration-count: 1;
+}
+
+.project .style-container:nth-of-type(odd), .guide .style-container:nth-of-type(odd) {
+    animation-duration: 4s;
+    animation-name: slideright;
+    animation-iteration-count: 1;
+}
+
+.slide-left {
+    animation-duration: 4s;
+    animation-name: slideleft;
+    animation-iteration-count: 1;
+}
+
+.slide-right {
+    animation-duration: 4s;
+    animation-name: slideright;
     animation-iteration-count: 1;
 }
 
@@ -30,12 +48,6 @@
         opacity: 1;
         margin-left: 0;
     }
-}
-
-.style-container {
-    animation-duration: 4s;
-    animation-name: slideright;
-    animation-iteration-count: 1;
 }
 
 @keyframes slideright {
@@ -62,4 +74,12 @@
     100% {
         opacity: 1;
     }
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
 }
