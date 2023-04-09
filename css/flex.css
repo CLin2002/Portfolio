@@ -8,6 +8,15 @@
     padding-bottom: 2rem;
 }
 
+.arrow-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
 
 /* .style-container-banner {
     background: var(--lavendergray-accent);
@@ -70,6 +79,10 @@
     flex-grow: 0;
     justify-content: center;
   }
+
+#full-spread {
+    height: 100vh;
+}
 
   @media only screen and (max-width: 600px) {
 
