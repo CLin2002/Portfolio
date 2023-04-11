@@ -61,54 +61,56 @@
 
 // function 2
 
-const hidden = document.querySelector(".style-container:nth-of-type(odd)", ".style-container:nth-of-typeof(even)");
-const reveals = document.querySelectorAll(".style-container:nth-of-type(odd)");  
-const reveals1 = document.querySelectorAll(".style-container:nth-of-type(even)");
+// const hidden = document.querySelector(".style-container:nth-of-type(odd)", ".style-container:nth-of-typeof(even)");
+const reveals = document.querySelectorAll(".style-container");  
+// const reveals1 = document.querySelectorAll(".style-container:nth-of-type(even)");
 
-function hide() {
-  hidden.style.visibility = "hidden"; 
-}
+// function hide() {
+//   hidden.style.visibility = "hidden"; 
+// }
 
-window.addEventListener("DOMContentLoaded", hide);
+// window.addEventListener("DOMContentLoaded", hide);
 
-function show() {
-  hidden.style.visibility = "visible"; 
-}
+// function show() {
+//   hidden.style.visibility = "visible"; 
+// }
 
-window.addEventListener("scroll", show);
+// window.addEventListener("scroll", show);
 
-function revealLeft() {
+function reveal() {
     // var reveals = document.querySelectorAll(".style-container:nth-of-type(odd)");
   
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = -300;
+      var elementVisible = 0;
   
-      if (elementTop < windowHeight - elementVisible) {
+      if (elementTop < windowHeight - elementVisible && i % 2 === 0) {
         reveals[i].classList.add("slide-left");
-      } else {
-        reveals[i].classList.remove("slide-left");
+      } 
+      if (elementTop < windowHeight - elementVisible && i % 2 !== 0){
+        reveals[i].classList.add("slide-right");
       }
     }
   }
   
-  window.addEventListener("scroll", revealLeft);
+  window.addEventListener("scroll", reveal);
 
-  function revealRight() {
-    // var reveals1 = document.querySelectorAll(".style-container:nth-of-type(even)");
+  // function revealRight() {
+  //   // var reveals1 = document.querySelectorAll(".style-container:nth-of-type(even)");
   
-    for (var i = 0; i < reveals1.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = -300;
+  //   for (var i = 0; i < reveals.length; i++) {
+  //     var windowHeight = window.innerHeight;
+  //     var elementTop = reveal[i].getBoundingClientRect().top;
+  //     var elementVisible = 0;
   
-      if (elementTop < windowHeight - elementVisible) {
-        reveals1[i].classList.add("slide-right");
-      } else {
-        reveals1[i].classList.remove("slide-right");
-      }
-    }
-  }
+  //     if (elementTop < windowHeight - elementVisible) {
+  //       reveals[i].classList.add("slide-right");
+  //     } 
+  //     // else {
+  //     //   reveals1[i].classList.remove("slide-right");
+  //     // }
+  //   }
+  // }
   
-  window.addEventListener("scroll", revealRight);
+  // window.addEventListener("scroll", revealRight);

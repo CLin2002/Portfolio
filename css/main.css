@@ -11,6 +11,15 @@ html {
     scroll-behavior: smooth;
 }
 
+ul {
+    list-style-type: none;
+}
+
+ol {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
 h1 {
     font-family: 'fredokaone', Arial, sans-serif;
     font-weight: bolder;
@@ -59,6 +68,16 @@ textarea {
     width: 50%;
     min-height: 4rem;
     border: none;
+    resize: vertical;
+}
+
+#message {
+    background-color: var(--white-accent);
+    color: var(--gray-accent);
+    width: 50%;
+    min-height: 4rem;
+    border: solid 1px;
+    border-color: var(--blurple-accent);
     resize: vertical;
 }
   
@@ -114,7 +133,7 @@ footer {
 }
 
 .center a:hover {
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
 
 .center img {
@@ -123,7 +142,20 @@ footer {
     object-fit: cover;
     width: 25vw;
     height: auto;
+}
 
+.zoom img{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.zoom img:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 #full-spread img {
@@ -232,12 +264,12 @@ footer {
     text-align: center;
     background: var(--gray-accent);
     color: var(--white-accent);
-    font-size: 30px;
+    font-size: 3rem;
 }
 
 .color-box{
-    height: 2rem;
-    width: 15rem;
+    height: 5vh;
+    width: 15vw;
   }
 
 .banner-block {
@@ -251,6 +283,30 @@ footer {
 
 .banner-block a:hover {
     color: var(--gray-accent);
+}
+
+/* .style-container a {
+    color: black;
+} */
+
+/* .style-container a:hover {
+    color: var(--blurple-accent);
+} */
+
+.banner-block .style-container a {
+    color: var(--white-accent);
+}
+
+.banner-block .style-container a:hover {
+    color: var(--blurple-accent);
+}
+
+#example-a{
+    color: black;
+}
+
+#example-a:hover {
+    color: var(--blurple-accent);
 }
 
 .top-border {
