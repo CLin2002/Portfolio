@@ -150,4 +150,12 @@
         font-size: 3em;
         text-align: center;
     }
+
+    #example-nav {
+        font-size: .75em;
+    }
+
+    .main-nav {
+        font-size: .9em;
+    }
   }

@@ -80,6 +80,15 @@ textarea {
     border-color: var(--blurple-accent);
     resize: vertical;
 }
+
+#message-no-deco {
+    background-color: var(--white-accent);
+    color: var(--gray-accent);
+    width: 50%;
+    min-height: 4rem;
+    border: none;
+    resize: vertical;
+}
   
 footer {
     font-family: 'comfortaa', Arial, sans-serif;
@@ -201,9 +210,14 @@ footer {
 
 .main-nav a{
     text-decoration: none;
+    font-size: 1em;
 }
 
 .main-nav a:hover {
+    color: var(--lavendergray-accent);
+}
+
+#example-nav a:hover {
     color: var(--lavendergray-accent);
 }
 
