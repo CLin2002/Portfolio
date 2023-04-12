@@ -81,6 +81,16 @@ textarea {
     resize: vertical;
 }
 
+#name, #email {
+    background-color: var(--white-accent);
+    color: var(--gray-accent);
+    width: 50%;
+    min-height: 2rem;
+    border: solid 1px;
+    border-color: var(--blurple-accent);
+    resize: vertical;
+}
+
 #message-no-deco {
     background-color: var(--white-accent);
     color: var(--gray-accent);
